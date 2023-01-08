@@ -2,39 +2,22 @@ import { BlogBuilder } from "../components/blog/BlogBuilder";
 const bloglist = [];
 
 const blog = new BlogBuilder({
-  title: "My First Blog",
+  title: "NFT smart contracts and their potential uses",
   image: "img",
-  description:
-    "Description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia provident similique corporis rem ullam odio excepturi voluptas harum, architecto sit!",
+  description:"NFT smart contracts. In the world of blockchain, a smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. NFTs are unique digital assets that are verified on a blockchain and cannot be exchanged for other tokens or assets",
+  url: "https://medium.com/coinmonks/nft-smart-contracts-and-their-potential-uses-8cda4b579aa8"
 })
-  .addHeading("Heading")
-  .addParagraph(
-    "1st Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vero reiciendis quas, autem sit culpa? Quibusdam, cupiditate voluptate a non nulla aliquid enim doloremque ullam, facilis quisquam similique hic omnis!"
-  )
-  .addParagraph(
-    "2nd Paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur ad, temporibus quae obcaecati eum expedita pariatur aspernatur recusandae beatae iste soluta sunt blanditiis dolore ipsam quia laboriosam quas perspiciatis architecto?"
-  );
+
 
 const blog1 = new BlogBuilder({
-  title: "My Second Blog",
+  title: "Deploy Your NFT Contract to Goerli Testnet",
   image: "img",
-  description:
-    "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore aut neque consectetur voluptatem quam nihil, facere earum adipisci, animi beatae dicta maiores, ipsam delectus ab molestias dolorum aperiam? Sapiente?",
+  description: "Networks are different Ethereum environments You can access them for Development, Testing, and Production. Since Ethereum is a protocol then there may be multiple Ethereum networks here are some abstract lists",
+  url: "https://medium.com/coinmonks/deploy-your-nft-contract-to-goerli-testnet-523d4fef731b"
 })
-  .addHeading("Heading")
-  .addParagraph(
-    "1st Paragraph Aspernatur vero reiciendis quas, autem sit culpa? Quibusdam, cupiditate voluptate a non nulla aliquid enim doloremque ullam, facilis quisquam similique hic omnis!"
-  )
-  .addParagraph(
-    "2nd Paragraph Consequuntur ad, temporibus quae obcaecati eum expedita pariatur aspernatur recusandae beatae iste soluta sunt blanditiis dolore ipsam quia laboriosam quas perspiciatis architecto?"
-  )
-  .addHeading("New Heading")
-  .addParagraph(
-    "1st Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vero reiciendis quas, autem sit culpa? Quibusdam, cupiditate voluptate a non nulla aliquid enim doloremque ullam, facilis quisquam similique hic omnis!"
-  )
-  .addParagraph(
-    "2nd Paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur ad, temporibus quae obcaecati eum expedita pariatur aspernatur recusandae beatae iste soluta sunt blanditiis dolore ipsam quia laboriosam quas perspiciatis architecto?"
-  );
+
+
+
 
 bloglist.push(blog1);
 bloglist.push(blog);

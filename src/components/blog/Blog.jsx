@@ -1,7 +1,6 @@
 import React from "react";
 import { BlogBuilder } from "./BlogBuilder";
 import bloglist from "../../editable-stuff/blog";
-import { Link } from "react-router-dom";
 const Blog = (props) => {
   return (
     <div className="container-lg mt-5 bg-blue">
@@ -13,6 +12,7 @@ const Blog = (props) => {
             title={value.title}
             description={value.description}
             index={index}
+            urlLink={value.url}
           />
         );
       })}
@@ -20,21 +20,21 @@ const Blog = (props) => {
   );
 };
 
-const BlogCard = ({ index, title, image, description }) => {
+const BlogCard = ({ index, title, image, description,urlLink }) => {
+  console.log("🚀 ~ file: Blog.jsx:25 ~ BlogCard ~ urlLink", urlLink)
   return (
     <div className="m-5">
       <div className="">
         <div className="row">
           <div className="col-4 col-lg-12">
-            {/* <img src={image} className="card-img" alt="..." /> */}
           </div>
           <div className="col-8 col-lg-12">
             <div className="">
               <h1 className="">{title}</h1>
               <p className="lead">{description}</p>
-              <Link to={`${process.env.PUBLIC_URL}blog/${index}`}>
+               <a href={urlLink}  target="_blank" rel="noreferrer" >
                 Read more...{" "}
-              </Link>
+              </a>  
             </div>
           </div>
         </div>
