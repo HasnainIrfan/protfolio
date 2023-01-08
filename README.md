@@ -124,14 +124,14 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
 10. To change the thumbnail image:
 
-    - Navigate to the "public" folder.  
-    - There you will see "social-image.png".  
-    - Delete it.   
-    - Take a screenshot of your version and rename it "social-image.png" and place it there.  
-    
-   Next time if you make changes, repeat from step 8.
+    - Navigate to the "public" folder.
+    - There you will see "social-image.png".
+    - Delete it.
+    - Take a screenshot of your version and rename it "social-image.png" and place it there.
 
-Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
+Next time if you make changes, repeat from step 8.
+
+Facing issues? Feel free to contact at shahirzain100@gmail.com.
 
 ## Showcase 🚀
 
