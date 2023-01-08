@@ -9,7 +9,11 @@
     <a href="https://hashirshoaeb.github.io/home">hashirshoaeb.github.io/home</a>
   </p>
 </p>
+
 [![Site preview](/public/social-image.png)](https://shahirzain.github.io/)
+
+## Prerequisites
+
 1. To run this project first clone and then:
 
 ```bash
