@@ -2,38 +2,39 @@ import React, { useState, useEffect, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
-import axios from "axios";
 
 const ProjectCard = ({ value }) => {
   const {
     name,
     description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
+    myRole,
+    repoLink,
+    languages,
+    link
   } = value;
+
   return (
     <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-        <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
-          <hr />
-          {languages_url ? (
-            <Language languages_url={languages_url} repo_url={svn_url} />
-          ) : (
-            <Skeleton count={3} />
-          )}
-          {value ? (
-            <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
-          ) : (
-            <Skeleton />
-          )}
-        </Card.Body>
-      </Card>
+      <a href={`${link && link !== "" ? link : "/"}`} target="_blank" >
+        <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+          <Card.Body>
+            <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
+            <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
+            <Card.Text as="h5">{(!myRole) ? "" : "My Role" || <Skeleton count={1} />} </Card.Text>
+            <Card.Text>{(!myRole) ? "" : myRole || <Skeleton count={3} />} </Card.Text>
+            {repoLink && repoLink !== "" ? <CardButtons svn_url={repoLink} /> : ""}
+            <hr />
+            {
+              languages && languages !== "" ? (
+                <Language languages={languages} />
+              ) : (
+                ""
+              )}
+          </Card.Body>
+        </Card>
+      </a>
     </Col>
+
   );
 };
 
@@ -53,49 +54,22 @@ const CardButtons = ({ svn_url }) => {
   );
 };
 
-const Language = ({ languages_url, repo_url }) => {
-  const [data, setData] = useState([]);
+const Language = ({ languages }) => {
 
-  const handleRequest = useCallback(async () => {
-    try {
-      const response = await axios.get(languages_url);
-      return setData(response.data);
-    } catch (error) {
-      console.error(error.message);
-    }
-  }, [languages_url]);
-
-  useEffect(() => {
-    handleRequest();
-  }, [handleRequest]);
-
-  const array = [];
-  let total_count = 0;
-  for (let index in data) {
-    array.push(index);
-    total_count += data[index];
-  }
+  console.log(languages, "701");
 
   return (
-    <div className="pb-3">
+    <div className="pb-3 ">
       Languages:{" "}
-      {array.length
-        ? array.map((language) => (
-          <a
-            key={language}
-            className="card-link"
-            href={repo_url + `/search?l=${language}`}
-            target=" _blank"
-            rel="noopener noreferrer"
-          >
+      {
+        languages?.map((item, i) => (
+          <span className="card-link" key={i}>
             <span className="badge bg-light text-dark">
-              {language}:{" "}
-              {Math.trunc((data[language] / total_count) * 1000) / 10} %
+              {item}
             </span>
-          </a>
-
+          </span>
         ))
-        : "code yet to be deployed."}
+      }
     </div>
   );
 };

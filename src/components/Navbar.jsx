@@ -5,6 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
+import { Link } from "react-router-dom";
+
+import Resume from '../editable-stuff/Hasnain_CV.pdf'
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -59,7 +62,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           <NavLink
             className="nav-item lead"
-            href={about.resume}
+            href={Resume}
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -73,6 +76,7 @@ const Navigation = React.forwardRef((props, ref) => {
               About
             </NavLink>
           )}
+          
           {skills.show && (
             <NavLink
               className="nav-item lead"

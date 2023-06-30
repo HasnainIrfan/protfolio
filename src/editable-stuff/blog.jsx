@@ -17,8 +17,6 @@ const blog1 = new BlogBuilder({
 })
 
 
-
-
 bloglist.push(blog1);
 bloglist.push(blog);
 
