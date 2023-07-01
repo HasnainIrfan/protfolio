@@ -55,9 +55,6 @@ const CardButtons = ({ svn_url }) => {
 };
 
 const Language = ({ languages }) => {
-
-  console.log(languages, "701");
-
   return (
     <div className="pb-3 ">
       Languages:{" "}
