@@ -1,4 +1,6 @@
 // Navigation Bar SECTION
+import Resume from "./Hasnain_CV.pdf";
+
 const navBar = {
   show: true,
 };
@@ -41,8 +43,7 @@ const about = {
   imageSize: 375,
   message:
     "Hi, I'm Hasnain, a MERN Stack Developer. I love building dynamic and interactive web apps that meet the client's requirements and provide an exceptional user experience. I'm skilled in HTML , Css , Scss , JavaScript , Typescript , React.js, Next.js , tailwindCss , Material UI ,Ant Design, Three.js ,  Node.js, Express.js, MongoDB and SQL . I enjoy working with modern frameworks and libraries, and I'm always up to date with the latest industry trends. I'm dedicated to crafting clean, efficient, and maintainable code. I thrive in team environments, and I'm always open to feedback. I have a keen eye for design and user experience. I understand the importance of creating visually appealing interfaces that are intuitive and user-friendly. I'm an avid learner, and I'm always eager to take on new challenges. Thanks for visiting my website! Feel free to explore my projects and reach out for collaboration or any inquiries. Let's bring your ideas to life!",
-  resume:
-    "https://docs.google.com/document/d/1-okmRAwSX0LCwjl3kZvpneUwv5hu1J-j-auBFltaffE/edit?usp=sharing",
+  resume: Resume,
 };
 
 const repos = {
