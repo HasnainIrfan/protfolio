@@ -42,7 +42,7 @@ const about = {
   imageLink: require("../editable-stuff/hasnian.jpg"),
   imageSize: 375,
   message:
-    "Hi, I'm Hasnain, a MERN Stack Developer. I love building dynamic and interactive web apps that meet the client's requirements and provide an exceptional user experience. I'm skilled in HTML , Css , Scss , JavaScript , Typescript , React.js, Next.js , tailwindCss , Material UI ,Ant Design, Three.js ,  Node.js, Express.js, MongoDB and SQL . I enjoy working with modern frameworks and libraries, and I'm always up to date with the latest industry trends. I'm dedicated to crafting clean, efficient, and maintainable code. I thrive in team environments, and I'm always open to feedback. I have a keen eye for design and user experience. I understand the importance of creating visually appealing interfaces that are intuitive and user-friendly. I'm an avid learner, and I'm always eager to take on new challenges. Thanks for visiting my website! Feel free to explore my projects and reach out for collaboration or any inquiries. Let's bring your ideas to life!",
+    "Hi, I'm Hasnain, a Senior Software Enginner. I love building dynamic and interactive web apps that meet the client's requirements and provide an exceptional user experience. I'm skilled in HTML , Css , Scss , JavaScript , Typescript , React.js, Next.js , tailwindCss , Material UI ,Ant Design, Three.js ,  Node.js, Express.js, MongoDB and SQL . I enjoy working with modern frameworks and libraries, and I'm always up to date with the latest industry trends. I'm dedicated to crafting clean, efficient, and maintainable code. I thrive in team environments, and I'm always open to feedback. I have a keen eye for design and user experience. I understand the importance of creating visually appealing interfaces that are intuitive and user-friendly. I'm an avid learner, and I'm always eager to take on new challenges. Thanks for visiting my website! Feel free to explore my projects and reach out for collaboration or any inquiries. Let's bring your ideas to life!",
   resume: Resume,
 };
 
@@ -56,21 +56,12 @@ const repos = {
     {
       name: "HR Management System",
       description:
-        "Experienced frontend React Developer with strong skills in JavaScript and ReactJS. Passionate about high-quality,responsive, and user-friendly web applications. A collaborative team player with excellent problem-solving skills and a drive to stay up-todate with the latest technologies.",
+        "Experienced Next.js Developer specializing in JavaScript and ReactJS, dedicated to creating high-quality, responsive, and user-friendly web applications. As a collaborative team player with strong problem-solving skills, I strive to stay updated with the latest technologies to deliver exceptional results.",
       myRole:
-        "As a React.js developer, I was responsible for building the front-end interface and implementing key HR functionalities, including employee onboarding, benefits management, performance tracking, and time and attendance tracking. I worked closely with the back-end team to ensure that data was being properly received and processed.",
+        "As a Next.js Developer, I designed and developed the front-end interface of an advanced HR Management System, implementing core functionalities and ensuring seamless data integration for an efficient and user-friendly platform.",
       repoLink: "",
-      languages: ["React", "MaterialUI/Scss", "Node", "Express", "SQL"],
-      link: "http://lucidhr.co/",
-    },
-    {
-      name: "Property Finder dubai",
-      description:
-        "The Property Finder project is an innovative web application designed to assist users in finding suitable properties for rent or purchase. It provides a user-friendly platform that enables individuals to search for properties based on specific criteria such as location, price range, property type, and amenities. The project aims to simplify the process of property search by aggregating and presenting relevant information in an organized manner.",
-      myRole:
-        "As a Front-End Developer and Team Lead in the Property Finder project, your responsibilities and contributions would involve both technical expertise and leadership skills.",
-      languages: ["Next", "Css/Antd", "PHP", "Laravel"],
-      link: "https://qrar.vercel.app/",
+      languages: ["Next", "Antd/Scss", "Node", "Express", "SQL"],
+      link: "https://fastdigitaltechnology.com/",
     },
     {
       name: "Company Protfolio Site",
@@ -115,6 +106,25 @@ const repos = {
         "Biznus Dotcms is a content management system (CMS) project aimed at developing a robust and flexible platform for managing and publishing web content. The project focuses on building a CMS specifically tailored for businesses, providing them with a powerful tool to create, organize, and deliver engaging digital content.",
       languages: ["Next", "Scss", "Node", "Express"],
       link: "https://biznus-dotcms.vercel.app/",
+    },
+    {
+      name: "HR Management System",
+      description:
+        "Experienced frontend React Developer with strong skills in JavaScript and ReactJS. Passionate about high-quality,responsive, and user-friendly web applications. A collaborative team player with excellent problem-solving skills and a drive to stay up-todate with the latest technologies.",
+      myRole:
+        "As a React.js developer, I was responsible for building the front-end interface and implementing key HR functionalities, including employee onboarding, benefits management, performance tracking, and time and attendance tracking. I worked closely with the back-end team to ensure that data was being properly received and processed.",
+      repoLink: "",
+      languages: ["React", "MaterialUI/Scss", "Node", "Express", "SQL"],
+      link: "http://lucidhr.co/",
+    },
+    {
+      name: "Property Finder dubai",
+      description:
+        "The Property Finder project is an innovative web application designed to assist users in finding suitable properties for rent or purchase. It provides a user-friendly platform that enables individuals to search for properties based on specific criteria such as location, price range, property type, and amenities. The project aims to simplify the process of property search by aggregating and presenting relevant information in an organized manner.",
+      myRole:
+        "As a Front-End Developer and Team Lead in the Property Finder project, your responsibilities and contributions would involve both technical expertise and leadership skills.",
+      languages: ["Next", "Css/Antd", "PHP", "Laravel"],
+      link: "https://qrar.vercel.app/",
     },
   ],
 };
@@ -187,10 +197,16 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: "Junior Team Lead || Frontend Developer",
+      role: "Senior Software Engineer",
       companylogo:
         "https://media.licdn.com/dms/image/C4D0BAQEf_efLzehjuQ/company-logo_200_200/0/1676546680220?e=1696464000&v=beta&t=TTDRPqsYQXHrIUSgzI9e8fWKGjEMNBNJ_8GH2Z95FyI",
-      date: "Feb 2023 – Present",
+      date: "Oct 2023 – Present",
+    },
+    {
+      role: "Junior Team Lead",
+      companylogo:
+        "https://media.licdn.com/dms/image/C4D0BAQEf_efLzehjuQ/company-logo_200_200/0/1676546680220?e=1696464000&v=beta&t=TTDRPqsYQXHrIUSgzI9e8fWKGjEMNBNJ_8GH2Z95FyI",
+      date: "Feb 2023 – Oct 2023",
     },
     {
       role: "Front-End Developer",
