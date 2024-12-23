@@ -158,9 +158,9 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "HTML/CSS/Scss", value: 95 },
-    { name: "JavaScript", value: 75 },
-    { name: "TypeScript", value: 75 },
+    { name: "HTML/CSS/Scss", value: 99 },
+    { name: "JavaScript", value: 80 },
+    { name: "TypeScript", value: 90 },
     { name: "React.JS", value: 90 },
     { name: "Next.Js", value: 92 },
     { name: "Node", value: 70 },
